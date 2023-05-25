@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+img{
+    cursor: pointer;
+}
+
+#side_nav{
+    background-color:  #5B9AB3;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.ocultar{
+    margin-left:-250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.header-box {
+    background-color: darkgrey;
+}
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar li{
+    border-bottom: 1px solid lightgrey;
+}
+.sidebar li:hover{
+    transition: 0.3s;
+    background-color: #999999;
+}
+.sidebar li a{
+    color: white;
+}
+.sidebar li a:hover{
+    transition: 0.3s;
+    color: white;
+}
+.sidebar li.active a:hover{
+    background-color: #999999;
+    color: white;
+}
+li:hover{
+    background-color: red;
+
+}
+.sidebar-ocultar{
+    display: none;
+}
+#side_nav.active{
+    margin-left:0;
+}
+
+table th.usuarios{
+    color: white;
+}
+table td.usuarios:first-child{
+    font-weight: bold;
+
+}
+.tamarillo{
+    background-color: #fff84b;
+
+}
+.trojo{
+    background-color: #ff8257;
+
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 760px) {
+    .ocultar-movil{
+        margin-left:-250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+}
